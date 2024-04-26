@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.main-container{
+  
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  margin: 0;
+  padding: 0;
+    /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.main-container h1{
+  text-align: center;
+}
+
+.main-container form{
+  justify-content: center;
+  display: flex;
+  flex-direction:column;
+  gap: 20px;
+  align-items: center;
+}
+.formInput{
+  border: 2px solid rgba(203,108,230,.8);
+  padding: 12px 14px;
+  border-radius: 20px;
+}
+
+
+
+.main-container input,textarea{
+  background-color: #2b372b;
+  border-radius: 5px;
+  font-family: Ubuntu-Mono, "Droid Sans Mono", "monospace", monospace;
+}
+
+
+.main-container input::placeholder,textarea::placeholder{
+  color: rgba(255,255,255,0.5);
+  padding: 2px;
+}
+
+.main-container textarea{
+  color: white;
+}
+
+.main-container input:focus,textarea:focus{
+  /* box-shadow: rgba(156, 17, 255, 0.24) 0px 3px 8px; */
+  /* box-shadow: rgb(139, 65, 208) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; */
+  box-shadow: rgb(139, 65, 208) 0px 0px 0px 2px, rgb(139, 65, 208) 0px 4px 6px -1px, rgb(139, 65, 208)0px 1px 0px inset;
+  border: 2px solid rgba(224, 28, 250,);
+}
+
+.main-container button{
+  background-color: rgb(255, 255, 255);   
+  /* color: rgb(142, 30, 152); */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+.main-container button:hover{
+  background-color: rgb(255, 215, 255);  
+  color: black;
+  box-shadow: rgb(139, 65, 208) 0px 0px 0px 2px, rgb(139, 65, 208) 0px 4px 6px -1px, rgb(139, 65, 208)0px 1px 0px inset; 
+}
+
+.noData{
+  text-align: center;
+  align-items: center;
+}
+
+.givenQuery{
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  /* justify-content: center; */
+}
+.givenQ{
+  margin: 0 20px ;
+  text-align: center;
+}
